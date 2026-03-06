@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ziyaan Technologies – Building the Future</title>
+    <meta name="description"
+        content="Ziyaan Technologies is a premier software house delivering cutting-edge mobile, desktop, and web solutions. CEO: Muhammad Waseem | CTO: Hikmatullah." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- ─── PARTICLES CANVAS ─── -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- ─── NAVIGATION ─── -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <img src="logo.png" alt="Ziyaan Technologies Logo" class="logo-img" />
+                <span class="logo-text">Ziyaan <span class="logo-accent">Technologies</span></span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#team" class="nav-link">Team</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <a href="#contact" class="btn-primary nav-cta">Get in Touch</a>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ─── HERO ─── -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                Software House · Est. 2020
+            </div>
+            <h1 class="hero-title">
+                Crafting Digital<br />
+                <span class="gradient-text">Excellence</span>
+            </h1>
+            <p class="hero-subtitle">
+                We engineer world-class mobile, desktop & web solutions that power businesses forward. From concept to
+                launch — we build it all.
+            </p>
+            <div class="hero-actions">
+                <a href="#projects" class="btn-primary" id="hero-cta-projects">View Our Work</a>
+                <a href="#contact" class="btn-outline" id="hero-cta-contact">Let's Talk</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number" data-target="10">0</span><span class="stat-plus">+</span>
+                    <span class="stat-label">Projects Delivered</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="25">0</span><span class="stat-plus">+</span>
+                    <span class="stat-label">Happy Clients</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="3">0</span><span class="stat-plus">+</span>
+                    <span class="stat-label">Years Experience</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="hero-orb hero-orb-1"></div>
+            <div class="hero-orb hero-orb-2"></div>
+            <div class="hero-orb hero-orb-3"></div>
+            <div class="tech-grid">
+                <div class="tech-card" style="--delay:0s"><span>📱</span>
+                    <p>Mobile</p>
+                </div>
+                <div class="tech-card" style="--delay:0.1s"><span>🖥️</span>
+                    <p>Desktop</p>
+                </div>
+                <div class="tech-card" style="--delay:0.2s"><span>🌐</span>
+                    <p>Web</p>
+                </div>
+                <div class="tech-card" style="--delay:0.3s"><span>🛡️</span>
+                    <p>Secure</p>
+                </div>
+                <div class="tech-card" style="--delay:0.4s"><span>⚡</span>
+                    <p>Fast</p>
+                </div>
+                <div class="tech-card" style="--delay:0.5s"><span>🤝</span>
+                    <p>Reliable</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── ABOUT ─── -->
+    <section id="about" class="about section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Who We Are</span>
+                <h2 class="section-title">Powering Innovation <br /><span class="gradient-text">at Every Scale</span>
+                </h2>
+                <p class="section-subtitle">Ziyaan Technologies is a dynamic software house committed to delivering
+                    high-impact digital products. We blend creativity with engineering to solve real-world problems.</p>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-card reveal" id="about-card-1">
+                    <div class="about-icon">🚀</div>
+                    <h3>Our Mission</h3>
+                    <p>To empower businesses with scalable, innovative software — delivering reliable solutions that
+                        create lasting value and drive growth.</p>
+                </div>
+                <div class="about-card reveal" id="about-card-2" style="--delay:0.1s">
+                    <div class="about-icon">🎯</div>
+                    <h3>Our Vision</h3>
+                    <p>To be the most trusted software partner across South Asia — known for quality, speed, and
+                        transformative technology delivery.</p>
+                </div>
+                <div class="about-card reveal" id="about-card-3" style="--delay:0.2s">
+                    <div class="about-icon">💡</div>
+                    <h3>Our Values</h3>
+                    <p>Integrity, innovation, and collaboration are at the core of everything we build — because great
+                        software starts with great people.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── SERVICES ─── -->
+    <section id="services" class="services section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">What We Do</span>
+                <h2 class="section-title">Our <span class="gradient-text">Services</span></h2>
+                <p class="section-subtitle">End-to-end software solutions tailored to your needs.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card reveal" id="svc-mobile">
+                    <div class="service-icon-wrap">📱</div>
+                    <h3>Mobile App Development</h3>
+                    <p>Native and cross-platform apps for Android & iOS — designed for performance, scalability, and
+                        stunning user experiences.</p>
+                    <ul class="service-list">
+                        <li>Android (Java / Flutter)</li>
+                        <li>Cross-platform React Native</li>
+                        <li>UI/UX Design</li>
+                        <li>Play Store Publishing</li>
+                    </ul>
+                </div>
+                <div class="service-card reveal" id="svc-desktop" style="--delay:0.15s">
+                    <div class="service-icon-wrap">🖥️</div>
+                    <h3>Desktop Application Development</h3>
+                    <p>Powerful desktop software built with Java/JavaFX — perfect for business management, POS systems,
+                        and enterprise tools.</p>
+                    <ul class="service-list">
+                        <li>Java / JavaFX Apps</li>
+                        <li>POS & Billing Systems</li>
+                        <li>Booking & Management Tools</li>
+                        <li>Reporting & Analytics</li>
+                    </ul>
+                </div>
+                <div class="service-card reveal" id="svc-web" style="--delay:0.3s">
+                    <div class="service-icon-wrap">🌐</div>
+                    <h3>Web Application Development</h3>
+                    <p>Modern, responsive web platforms built with the latest technologies — from landing pages to
+                        complex web systems.</p>
+                    <ul class="service-list">
+                        <li>React / Next.js / Node.js</li>
+                        <li>Admin Dashboards</li>
+                        <li>E-commerce Solutions</li>
+                        <li>REST API Development</li>
+                    </ul>
+                </div>
+                <div class="service-card reveal" id="svc-custom" style="--delay:0.45s">
+                    <div class="service-icon-wrap">⚙️</div>
+                    <h3>Custom Software Solutions</h3>
+                    <p>Tailored software built from the ground up — aligned with your exact workflow, industry, and
+                        business goals.</p>
+                    <ul class="service-list">
+                        <li>ERP / CRM Systems</li>
+                        <li>Database Architecture</li>
+                        <li>System Integration</li>
+                        <li>Software Consulting</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── PROJECTS ─── -->
+    <section id="projects" class="projects section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Our Portfolio</span>
+                <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+                <p class="section-subtitle">A showcase of the work we're most proud of.</p>
+            </div>
+            <div class="projects-grid">
+
+                <div class="project-card reveal featured" id="proj-chaman">
+                    <div class="project-badge">Mobile App</div>
+                    <div class="project-icon">🛒</div>
+                    <div class="project-info">
+                        <h3>Chaman Bazar</h3>
+                        <p>A feature-rich mobile marketplace application connecting buyers and sellers — with real-time
+                            listings, complaint management, category browsing, and push notifications.</p>
+                        <div class="project-tags">
+                            <span class="tag">React Native</span>
+                            <span class="tag">Android</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">MySQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card reveal" id="proj-gkb" style="--delay:0.1s">
+                    <div class="project-badge">Desktop App</div>
+                    <div class="project-icon">🏛️</div>
+                    <div class="project-info">
+                        <h3>GKB Banquet Booking System</h3>
+                        <p>Complete booking and event management system for Grand Kebabish Banquet — handling
+                            reservations, hall management, and analytics.</p>
+                        <div class="project-tags">
+                            <span class="tag">Java</span>
+                            <span class="tag">JavaFX</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card reveal" id="proj-kebabish" style="--delay:0.2s">
+                    <div class="project-badge">Desktop App</div>
+                    <div class="project-icon">🍽️</div>
+                    <div class="project-info">
+                        <h3>Kebabish Pakwan Desktop App</h3>
+                        <p>Full restaurant management system — order handling, menu management, billing, and detailed
+                            reporting built for efficient restaurant operations.</p>
+                        <div class="project-tags">
+                            <span class="tag">Java</span>
+                            <span class="tag">JavaFX</span>
+                            <span class="tag">MySQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card reveal" id="proj-shiftsmart-android" style="--delay:0.3s">
+                    <div class="project-badge">Mobile App</div>
+                    <div class="project-icon">📅</div>
+                    <div class="project-info">
+                        <h3>ShiftSmart Android App</h3>
+                        <p>A gig-based shift management mobile app — allowing workers to view, claim, and manage shifts
+                            seamlessly from their Android devices.</p>
+                        <div class="project-tags">
+                            <span class="tag">Android</span>
+                            <span class="tag">Java</span>
+                            <span class="tag">REST API</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card reveal" id="proj-shiftsmart-web" style="--delay:0.4s">
+                    <div class="project-badge">Web App</div>
+                    <div class="project-icon">🌐</div>
+                    <div class="project-info">
+                        <h3>ShiftSmart Web Platform</h3>
+                        <p>A full-featured web platform for shift management — providing admin dashboards, worker
+                            management, reporting, and scheduling tools.</p>
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">PostgreSQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card reveal" id="proj-cafe-baldia" style="--delay:0.5s">
+                    <div class="project-badge">Desktop App</div>
+                    <div class="project-icon">☕</div>
+                    <div class="project-info">
+                        <h3>Cafe Baldia</h3>
+                        <p>A complete café management system — handling orders, menu items, billing, and daily sales
+                            reports to streamline café operations efficiently.</p>
+                        <div class="project-tags">
+                            <span class="tag">Java</span>
+                            <span class="tag">JavaFX</span>
+                            <span class="tag">MySQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card reveal" id="proj-bricks-bhatti" style="--delay:0.6s">
+                    <div class="project-badge">Desktop App</div>
+                    <div class="project-icon">🧱</div>
+                    <div class="project-info">
+                        <h3>Rahim Khan Bhati – Bricks Bhatti</h3>
+                        <p>A business management system built for a bricks manufacturing unit — covering production
+                            tracking, inventory, sales records, and financial reporting.</p>
+                        <div class="project-tags">
+                            <span class="tag">Java</span>
+                            <span class="tag">JavaFX</span>
+                            <span class="tag">MySQL</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── TEAM ─── -->
+    <section id="team" class="team section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">The Leadership</span>
+                <h2 class="section-title">Meet Our <span class="gradient-text">Team</span></h2>
+                <p class="section-subtitle">People who bring your ideas to life.</p>
+            </div>
+            <div class="team-grid">
+                <div class="team-card reveal" id="team-ceo">
+                    <div class="team-avatar ceo-avatar">
+                        <span>MW</span>
+                        <div class="avatar-glow"></div>
+                    </div>
+                    <div class="team-info">
+                        <div class="team-role-badge ceo">Chief Executive Officer</div>
+                        <h3>Muhammad Waseem</h3>
+                        <p>Co-founder and CEO of Ziyaan Technologies. Muhammad is a hands-on developer and team leader —
+                            actively involved in building every project alongside the team, from architecture to final
+                            delivery.</p>
+                        <div class="team-skills">
+                            <span>Full-Stack Dev</span>
+                            <span>Leadership</span>
+                            <span>Mobile & Desktop</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-card reveal" id="team-cto" style="--delay:0.15s">
+                    <div class="team-avatar cto-avatar">
+                        <span>HU</span>
+                        <div class="avatar-glow"></div>
+                    </div>
+                    <div class="team-info">
+                        <div class="team-role-badge cto">Chief Technology Officer</div>
+                        <h3>Hikmatullah</h3>
+                        <p>Co-founder and CTO of Ziyaan Technologies. Hikmatullah drives all technical development —
+                            writing code, designing systems, and shipping high-quality software for every client
+                            project.</p>
+                        <div class="team-skills">
+                            <span>Software Architecture</span>
+                            <span>Full-Stack Dev</span>
+                            <span>Java & Mobile</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── CONTACT ─── -->
+    <section id="contact" class="contact section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Get In Touch</span>
+                <h2 class="section-title">Let's Build Something <span class="gradient-text">Amazing</span></h2>
+                <p class="section-subtitle">Have a project in mind? We'd love to hear about it. Reach out and let's talk
+                    software.</p>
+            </div>
+
+            <div class="contact-layout">
+                <div class="contact-info">
+                    <div class="contact-card" id="contact-phone">
+                        <div class="contact-icon-wrap">📞</div>
+                        <div>
+                            <h4>Phone / WhatsApp</h4>
+                            <a href="tel:+923172532083">+92 317 253 2083</a>
+                        </div>
+                    </div>
+                    <div class="contact-card" id="contact-email">
+                        <div class="contact-icon-wrap">✉️</div>
+                        <div>
+                            <h4>Email</h4>
+                            <a href="mailto:ziyaantechnologies@gmail.com">ziyaantechnologies@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-card" id="contact-location">
+                        <div class="contact-icon-wrap">📍</div>
+                        <div>
+                            <h4>Based In</h4>
+                            <span>Pakistan 🇵🇰</span>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" placeholder="e.g. Ziyaan" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="you@example.com" required />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" placeholder="Project inquiry, partnership..."
+                            required />
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Tell us about your project or idea..."
+                            rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary form-submit" id="submitBtn">
+                        <span>Send Message</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="22" y1="2" x2="11" y2="13"></line>
+                            <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                        </svg>
+                    </button>
+                    <div class="form-success" id="formSuccess">
+                        ✅ Thank you! We'll get back to you soon.
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── FOOTER ─── -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <img src="logo.png" alt="Ziyaan Technologies" class="footer-logo" />
+                    <span>Ziyaan Technologies</span>
+                </div>
+                <nav class="footer-nav">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#services">Services</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#team">Team</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+            </div>
+            <div class="footer-bottom">
+                <p>© <span id="year"></span> Ziyaan Technologies. All rights reserved.</p>
+                <p>Crafted with ❤️ in Pakistan</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
