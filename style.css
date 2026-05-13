@@ -777,6 +777,70 @@ body {
   font-weight: 500;
 }
 
+/* Project Screenshots */
+.project-screenshot {
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid var(--border);
+  background: rgba(0, 0, 0, 0.2);
+  flex-shrink: 0;
+}
+
+.project-screenshot img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.project-screenshot:hover img {
+  transform: scale(1.03);
+}
+
+.project-card.featured .project-screenshot.featured-screenshot {
+  width: 240px;
+  border-radius: var(--radius-lg);
+  border: 2px solid rgba(59, 130, 246, 0.3);
+  box-shadow: 0 8px 32px rgba(59, 130, 246, 0.15);
+}
+
+.project-card:not(.featured) .project-screenshot {
+  max-height: 200px;
+  overflow: hidden;
+}
+
+.project-card:not(.featured) .project-screenshot img {
+  object-fit: cover;
+  object-position: top;
+  height: 200px;
+}
+
+/* Government Badge */
+.project-badge.govt-badge {
+  background: rgba(16, 185, 129, 0.15);
+  color: #34d399;
+  border: 1px solid rgba(16, 185, 129, 0.35);
+  font-size: 0.8rem;
+  padding: 5px 14px;
+  margin-bottom: 6px;
+  animation: pulse-badge 3s ease-in-out infinite;
+}
+
+@keyframes pulse-badge {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.3); }
+  50% { box-shadow: 0 0 16px 4px rgba(16, 185, 129, 0.15); }
+}
+
+/* Play Store Badge */
+.project-badge.playstore-badge {
+  background: rgba(6, 182, 212, 0.12);
+  color: var(--accent-2);
+  border: 1px solid rgba(6, 182, 212, 0.3);
+  font-size: 0.75rem;
+  padding: 4px 12px;
+  margin-bottom: 10px;
+}
+
 /* ============================================================
    TEAM
    ============================================================ */
@@ -1240,6 +1304,13 @@ body {
 
   .project-card.featured {
     flex-direction: column;
+    text-align: center;
+  }
+
+  .project-card.featured .project-screenshot.featured-screenshot {
+    width: 100%;
+    max-width: 280px;
+    margin: 0 auto;
   }
 
   .team-grid {
