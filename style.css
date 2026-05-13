@@ -784,11 +784,14 @@ body {
   border: 1px solid var(--border);
   background: rgba(0, 0, 0, 0.2);
   flex-shrink: 0;
+  max-height: 200px;
 }
 
 .project-screenshot img {
   width: 100%;
-  height: auto;
+  height: 200px;
+  object-fit: cover;
+  object-position: top;
   display: block;
   transition: transform 0.4s ease;
 }
@@ -798,21 +801,17 @@ body {
 }
 
 .project-card.featured .project-screenshot.featured-screenshot {
-  width: 240px;
+  width: 220px;
+  max-height: 320px;
   border-radius: var(--radius-lg);
   border: 2px solid rgba(59, 130, 246, 0.3);
   box-shadow: 0 8px 32px rgba(59, 130, 246, 0.15);
 }
 
-.project-card:not(.featured) .project-screenshot {
-  max-height: 200px;
-  overflow: hidden;
-}
-
-.project-card:not(.featured) .project-screenshot img {
+.project-card.featured .project-screenshot.featured-screenshot img {
+  height: 320px;
   object-fit: cover;
   object-position: top;
-  height: 200px;
 }
 
 /* Government Badge */
