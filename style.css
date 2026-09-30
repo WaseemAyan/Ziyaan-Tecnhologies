@@ -254,10 +254,7 @@ body {
   width: 36px;
   height: 36px;
   border-radius: 8px;
-  object-fit: cover;
-  background: transparent;
-  mix-blend-mode: screen;
-  filter: brightness(1.1) contrast(1.05);
+  object-fit: contain;
 }
 
 .logo-text {
@@ -1168,10 +1165,7 @@ body {
   width: 32px;
   height: 32px;
   border-radius: 6px;
-  object-fit: cover;
-  background: transparent;
-  mix-blend-mode: screen;
-  filter: brightness(1.1) contrast(1.05);
+  object-fit: contain;
 }
 
 .footer-nav {
