@@ -11,514 +11,926 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap"
         rel="stylesheet" />
     <link rel="icon" type="image/png" href="logo.png" />
     <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
+    <div class="page">
 
-    <!-- ─── PARTICLES CANVAS ─── -->
-    <canvas id="particles-canvas"></canvas>
-
-    <!-- ─── NAVIGATION ─── -->
-    <nav id="navbar">
-        <div class="nav-container">
-            <a href="#home" class="nav-logo">
-                <img src="logo.png" alt="Ziyaan Technologies Logo" class="logo-img" />
-                <span class="logo-text">Ziyaan <span class="logo-accent">Technologies</span></span>
-            </a>
-            <ul class="nav-links" id="navLinks">
-                <li><a href="#home" class="nav-link active">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#services" class="nav-link">Services</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#team" class="nav-link">Team</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
-            <a href="#contact" class="btn-primary nav-cta">Get in Touch</a>
-            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
-                <span></span><span></span><span></span>
-            </button>
-        </div>
-    </nav>
-
-    <!-- ─── HERO ─── -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <div class="hero-badge">
-                <span class="badge-dot"></span>
-                Software House · Est. 2024
-            </div>
-            <h1 class="hero-title">
-                Crafting Digital<br />
-                <span class="gradient-text">Excellence</span>
-            </h1>
-            <p class="hero-subtitle">
-                Ziyaan Technologies is a software development company providing digital solutions for businesses and
-                government institutions.
-            </p>
-            <div class="hero-actions">
-                <a href="#projects" class="btn-primary" id="hero-cta-projects">View Our Work</a>
-                <a href="#contact" class="btn-outline" id="hero-cta-contact">Let's Talk</a>
-            </div>
-            <div class="hero-stats">
-                <div class="stat-item">
-                    <span class="stat-number" data-target="10">0</span><span class="stat-plus">+</span>
-                    <span class="stat-label">Projects Delivered</span>
-                </div>
-                <div class="stat-divider"></div>
-                <div class="stat-item">
-                    <span class="stat-number" data-target="25">0</span><span class="stat-plus">+</span>
-                    <span class="stat-label">Happy Clients</span>
-                </div>
-                <div class="stat-divider"></div>
-                <div class="stat-item">
-                    <span class="stat-number" data-target="3">0</span><span class="stat-plus">+</span>
-                    <span class="stat-label">Years Experience</span>
+        <!-- ─── TOP HEADER (scrolls away) ─── -->
+        <header class="top-header">
+            <div class="top-header-inner">
+                <a href="#home" class="brand" aria-label="Ziyaan Technologies home">
+                    <img src="logo.png" alt="Ziyaan Technologies Logo" class="brand-logo" />
+                    <span class="brand-text">Ziyaan <span class="premium-gradient-text">Technologies</span></span>
+                </a>
+                <div class="top-header-actions">
+                    <a href="#contact" class="premium-button reflection icon-btn icon-btn-wide" aria-label="Get in Touch">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" /></svg>
+                        <span>Get in Touch</span>
+                    </a>
+                    <a href="#projects" class="glass-btn icon-btn icon-btn-wide" aria-label="Projects">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7" height="7" /><rect x="14" y="3" width="7" height="7" /><rect x="14" y="14" width="7" height="7" /><rect x="3" y="14" width="7" height="7" /></svg>
+                        <span>Projects</span>
+                    </a>
+                    <a href="tel:+923172532083" class="glass-btn icon-btn" aria-label="Call us">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z" /></svg>
+                    </a>
                 </div>
             </div>
-        </div>
-        <div class="hero-visual">
-            <div class="hero-orb hero-orb-1"></div>
-            <div class="hero-orb hero-orb-2"></div>
-            <div class="hero-orb hero-orb-3"></div>
-            <div class="tech-grid">
-                <div class="tech-card" style="--delay:0s"><span>📱</span>
-                    <p>Mobile</p>
-                </div>
-                <div class="tech-card" style="--delay:0.1s"><span>🖥️</span>
-                    <p>Desktop</p>
-                </div>
-                <div class="tech-card" style="--delay:0.2s"><span>🌐</span>
-                    <p>Web</p>
-                </div>
-                <div class="tech-card" style="--delay:0.3s"><span>🛡️</span>
-                    <p>Secure</p>
-                </div>
-                <div class="tech-card" style="--delay:0.4s"><span>⚡</span>
-                    <p>Fast</p>
-                </div>
-                <div class="tech-card" style="--delay:0.5s"><span>🤝</span>
-                    <p>Reliable</p>
-                </div>
-            </div>
-        </div>
-    </section>
+        </header>
 
-    <!-- ─── ABOUT ─── -->
-    <section id="about" class="about section">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Who We Are</span>
-                <h2 class="section-title">Powering Innovation <br /><span class="gradient-text">at Every Scale</span>
-                </h2>
-                <p class="section-subtitle">Ziyaan Technologies is a dynamic software house committed to delivering
-                    high-impact digital products. We blend creativity with engineering to solve real-world problems.</p>
-            </div>
-
-            <div class="about-grid">
-                <div class="about-card reveal" id="about-card-1">
-                    <div class="about-icon">🚀</div>
-                    <h3>Our Mission</h3>
-                    <p>To empower businesses with scalable, innovative software — delivering reliable solutions that
-                        create lasting value and drive growth.</p>
-                </div>
-                <div class="about-card reveal" id="about-card-2" style="--delay:0.1s">
-                    <div class="about-icon">🎯</div>
-                    <h3>Our Vision</h3>
-                    <p>To be the most trusted software partner across South Asia — known for quality, speed, and
-                        transformative technology delivery.</p>
-                </div>
-                <div class="about-card reveal" id="about-card-3" style="--delay:0.2s">
-                    <div class="about-icon">💡</div>
-                    <h3>Our Values</h3>
-                    <p>Integrity, innovation, and collaboration are at the core of everything we build — because great
-                        software starts with great people.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ─── SERVICES ─── -->
-    <section id="services" class="services section">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">What We Do</span>
-                <h2 class="section-title">Our <span class="gradient-text">Services</span></h2>
-                <p class="section-subtitle">End-to-end software solutions tailored to your needs.</p>
-            </div>
-            <div class="services-grid">
-                <div class="service-card reveal" id="svc-mobile">
-                    <div class="service-icon-wrap">📱</div>
-                    <h3>Mobile App Development</h3>
-                    <p>Native and cross-platform apps for Android & iOS — designed for performance, scalability, and
-                        stunning user experiences.</p>
-                    <ul class="service-list">
-                        <li>Android (Java / Flutter)</li>
-                        <li>Cross-platform React Native</li>
-                        <li>UI/UX Design</li>
-                        <li>Play Store Publishing</li>
-                    </ul>
-                </div>
-                <div class="service-card reveal" id="svc-desktop" style="--delay:0.15s">
-                    <div class="service-icon-wrap">🖥️</div>
-                    <h3>Desktop Application Development</h3>
-                    <p>Powerful desktop software built with Java/JavaFX — perfect for business management, POS systems,
-                        and enterprise tools.</p>
-                    <ul class="service-list">
-                        <li>Java / JavaFX Apps</li>
-                        <li>POS & Billing Systems</li>
-                        <li>Booking & Management Tools</li>
-                        <li>Reporting & Analytics</li>
-                    </ul>
-                </div>
-                <div class="service-card reveal" id="svc-web" style="--delay:0.3s">
-                    <div class="service-icon-wrap">🌐</div>
-                    <h3>Web Application Development</h3>
-                    <p>Modern, responsive web platforms built with the latest technologies — from landing pages to
-                        complex web systems.</p>
-                    <ul class="service-list">
-                        <li>React / Next.js / Node.js</li>
-                        <li>Admin Dashboards</li>
-                        <li>E-commerce Solutions</li>
-                        <li>REST API Development</li>
-                    </ul>
-                </div>
-                <div class="service-card reveal" id="svc-custom" style="--delay:0.45s">
-                    <div class="service-icon-wrap">⚙️</div>
-                    <h3>Custom Software Solutions</h3>
-                    <p>Tailored software built from the ground up — aligned with your exact workflow, industry, and
-                        business goals.</p>
-                    <ul class="service-list">
-                        <li>ERP / CRM Systems</li>
-                        <li>Database Architecture</li>
-                        <li>System Integration</li>
-                        <li>Software Consulting</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ─── PROJECTS ─── -->
-    <section id="projects" class="projects section">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Our Portfolio</span>
-                <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
-                <p class="section-subtitle">A showcase of the work we're most proud of.</p>
-            </div>
-            <div class="projects-grid">
-
-                <div class="project-card reveal featured" id="proj-chaman">
-                    <div class="project-screenshot featured-screenshot">
-                        <img src="screenshots/chaman-bazar.png" alt="Chaman Bazar on Google Play Store" />
-                    </div>
-                    <div class="project-info">
-                        <div class="project-badge govt-badge">🏛️ Government of Balochistan</div>
-                        <div class="project-badge playstore-badge">▶️ Available on Play Store</div>
-                        <h3>Chaman Bazar</h3>
-                        <p>Chaman Bazar is a specialized government digital initiative designed to regulate and monitor
-                            the prices of essential commodities specifically within Chaman city. This project serves as
-                            a transparent bridge between the District Administration Chaman
-                            and the public, ensuring that official price lists are implemented and
-                            accessible to all citizens. By providing real-time data on the costs of daily goods, Chaman
-                            Bazar aims to curb overcharging, stabilize the local market, and empower residents with a
-                            reliable tool for consumer rights and price accountability.</p>
-                        <div class="project-tags">
-                            <span class="tag">React Native</span>
-                            <span class="tag">Android</span>
-                            <span class="tag">Node.js</span>
-                            <span class="tag">MySQL</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card reveal" id="proj-gkb" style="--delay:0.1s">
-                    <div class="project-badge">Desktop App</div>
-                    <div class="project-icon">🏛️</div>
-                    <div class="project-info">
-                        <h3>GKB Banquet Booking System</h3>
-                        <p>Complete booking and event management system for Grand Kebabish Banquet — handling
-                            reservations, hall management, and analytics.</p>
-                        <div class="project-tags">
-                            <span class="tag">Java</span>
-                            <span class="tag">JavaFX</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card reveal" id="proj-kebabish" style="--delay:0.2s">
-                    <div class="project-badge">Desktop App</div>
-                    <div class="project-screenshot">
-                        <img src="screenshots/pakwan-management.png" alt="Pakwan Management System" />
-                    </div>
-                    <div class="project-info">
-                        <h3>Pakwan Management System</h3>
-                        <p>Full restaurant management system — order handling, menu management, billing, and detailed
-                            reporting built for efficient restaurant operations.</p>
-                        <div class="project-tags">
-                            <span class="tag">Java</span>
-                            <span class="tag">JavaFX</span>
-                            <span class="tag">MySQL</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card reveal" id="proj-humkaam-android" style="--delay:0.3s">
-                    <div class="project-badge">Mobile App</div>
-                    <div class="project-screenshot">
-                        <img src="screenshots/humkaam-android.png" alt="HumKaam Android - Hire trusted experts" />
-                    </div>
-                    <div class="project-info">
-                        <h3>HumKaam Android App</h3>
-                        <p>Pakistan's #1 verified professionals network — connecting clients with ID-verified, background-checked
-                            plumbers, electricians, tutors, nurses, and more. Find trusted experts for any job, instantly.</p>
-                        <div class="project-tags">
-                            <span class="tag">Android</span>
-                            <span class="tag">Kotlin</span>
-                            <span class="tag">Jetpack Compose</span>
-                            <span class="tag">REST API</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card reveal" id="proj-humkaam-web" style="--delay:0.4s">
-                    <div class="project-badge">Web App</div>
-                    <div class="project-screenshot">
-                        <img src="screenshots/humkaam-web.png" alt="HumKaam Web Platform" />
-                    </div>
-                    <div class="project-info">
-                        <h3>HumKaam Web Platform</h3>
-                        <p>A full-featured web platform for hiring verified professionals — providing search, booking,
-                            in-app messaging, reviews, and admin management dashboards.</p>
-                        <div class="project-tags">
-                            <span class="tag">React</span>
-                            <span class="tag">Node.js</span>
-                            <span class="tag">PostgreSQL</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card reveal" id="proj-cafe-baldia" style="--delay:0.5s">
-                    <div class="project-badge">Desktop App</div>
-                    <div class="project-screenshot">
-                        <img src="screenshots/cafe-baldia.png" alt="Cafe Baldia POS System" />
-                    </div>
-                    <div class="project-info">
-                        <h3>Cafe Baldia</h3>
-                        <p>A complete café management and POS system — handling dine-in/delivery orders, table management,
-                            menu items, billing, khata (ledger), and daily sales reports to streamline café operations efficiently.</p>
-                        <div class="project-tags">
-                            <span class="tag">Java</span>
-                            <span class="tag">JavaFX</span>
-                            <span class="tag">MySQL</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card reveal" id="proj-bricks-bhatti" style="--delay:0.6s">
-                    <div class="project-badge">Desktop App</div>
-                    <div class="project-icon">🧱</div>
-                    <div class="project-info">
-                        <h3>Rahim Khan Bhati – Bricks Bhatti</h3>
-                        <p>A business management system built for a bricks manufacturing unit — covering production
-                            tracking, inventory, sales records, and financial reporting.</p>
-                        <div class="project-tags">
-                            <span class="tag">Java</span>
-                            <span class="tag">JavaFX</span>
-                            <span class="tag">MySQL</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card reveal" id="proj-multi-agent-ai" style="--delay:0.7s">
-                    <div class="project-badge">AI / Research</div>
-                    <div class="project-icon">🤖</div>
-                    <div class="project-info">
-                        <h3>Multi-Agent AI Student Assistant</h3>
-                        <p>A multi-agent AI system designed to assist students with study-related tasks and academic
-                            workflows. Built around specialized agents handling task decomposition, context management,
-                            and structured academic outputs — emphasizing separated reasoning, task execution, and
-                            user-facing responses.</p>
-                        <div class="project-tags">
-                            <span class="tag">Python</span>
-                            <span class="tag">LLMs</span>
-                            <span class="tag">Multi-Agent Architecture</span>
-                            <span class="tag">AI Orchestration</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card reveal" id="proj-ai-traffic" style="--delay:0.8s">
-                    <div class="project-badge">Computer Vision / AI</div>
-                    <div class="project-icon">🚦</div>
-                    <div class="project-info">
-                        <h3>AI Traffic Management &amp; License/Vehicle Recognition System</h3>
-                        <p>A YOLO-based computer vision model for traffic-management applications. Integrates OCR
-                            technology to extract textual data from detected vehicle and license-plate regions,
-                            combining detection and extraction into an automated pipeline for reducing manual
-                            monitoring and enabling intelligent traffic-data processing.</p>
-                        <div class="project-tags">
-                            <span class="tag">YOLO</span>
-                            <span class="tag">Computer Vision</span>
-                            <span class="tag">OCR</span>
-                            <span class="tag">Python</span>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- ─── TEAM ─── -->
-    <section id="team" class="team section">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">The Leadership</span>
-                <h2 class="section-title">Meet Our <span class="gradient-text">Team</span></h2>
-                <p class="section-subtitle">People who bring your ideas to life.</p>
-            </div>
-            <div class="team-grid">
-                <div class="team-card reveal" id="team-ceo">
-                    <div class="team-avatar ceo-avatar">
-                        <span>MW</span>
-                        <div class="avatar-glow"></div>
-                    </div>
-                    <div class="team-info">
-                        <div class="team-role-badge ceo">Chief Executive Officer</div>
-                        <h3><a href="https://waseemayan.github.io/Portfolio/" target="_blank" rel="noopener noreferrer" class="team-name-link">Muhammad Waseem</a></h3>
-                        <p>Co-founder and CEO of Ziyaan Technologies. Muhammad Waseem is a hands-on developer and team
-                            leader —
-                            actively involved in building every project alongside the team, from architecture to final
-                            delivery.</p>
-                        <div class="team-skills">
-                            <span>Full-Stack Dev</span>
-                            <span>Leadership</span>
-                            <span>Mobile & Desktop</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="team-card reveal" id="team-cto" style="--delay:0.15s">
-                    <div class="team-avatar cto-avatar">
-                        <span>HU</span>
-                        <div class="avatar-glow"></div>
-                    </div>
-                    <div class="team-info">
-                        <div class="team-role-badge cto">Chief Technology Officer</div>
-                        <h3>Hikmatullah</h3>
-                        <p>Co-founder and CTO of Ziyaan Technologies. Hikmatullah drives all technical development —
-                            writing code, designing systems, and shipping high-quality software for every client
-                            project.</p>
-                        <div class="team-skills">
-                            <span>Software Architecture</span>
-                            <span>Full-Stack Dev</span>
-                            <span>Java & Mobile</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ─── CONTACT ─── -->
-    <section id="contact" class="contact section">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Get In Touch</span>
-                <h2 class="section-title">Let's Build Something <span class="gradient-text">Amazing</span></h2>
-                <p class="section-subtitle">Have a project in mind? We'd love to hear about it. Reach out and let's talk
-                    software.</p>
-            </div>
-
-            <div class="contact-layout">
-                <div class="contact-info">
-                    <div class="contact-card" id="contact-phone">
-                        <div class="contact-icon-wrap">📞</div>
-                        <div>
-                            <h4>Phone / WhatsApp</h4>
-                            <a href="tel:+923172532083">+92 317 253 2083</a>
-                        </div>
-                    </div>
-                    <div class="contact-card" id="contact-email">
-                        <div class="contact-icon-wrap">✉️</div>
-                        <div>
-                            <h4>Email</h4>
-                            <a href="mailto:ziyaantechnologies@gmail.com">ziyaantechnologies@gmail.com</a>
-                        </div>
-                    </div>
-                    <div class="contact-card" id="contact-location">
-                        <div class="contact-icon-wrap">📍</div>
-                        <div>
-                            <h4>Based In</h4>
-                            <span>Pakistan 🇵🇰</span>
-                        </div>
-                    </div>
-                </div>
-
-                <form class="contact-form" id="contactForm">
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="name">Your Name</label>
-                            <input type="text" id="name" name="name" placeholder="e.g. Ziyaan" required />
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email Address</label>
-                            <input type="email" id="email" name="email" placeholder="you@example.com" required />
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="subject">Subject</label>
-                        <input type="text" id="subject" name="subject" placeholder="Project inquiry, partnership..."
-                            required />
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" placeholder="Tell us about your project or idea..."
-                            rows="5" required></textarea>
-                    </div>
-                    <button type="submit" class="btn-primary form-submit" id="submitBtn">
-                        <span>Send Message</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <line x1="22" y1="2" x2="11" y2="13"></line>
-                            <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
-                        </svg>
+        <!-- ─── FLOATING NAV (appears on scroll) ─── -->
+        <div class="floating-nav-shell" id="floatingNav" aria-hidden="true" inert>
+            <div class="floating-nav-surface">
+                <a href="#home" class="floating-brand" aria-label="Ziyaan Technologies home">
+                    <img src="logo.png" alt="" />
+                </a>
+                <div class="floating-nav-right">
+                    <nav class="floating-links" aria-label="Floating navigation">
+                        <a href="#home" class="nav-link">Home</a>
+                        <a href="#services" class="nav-link">Services</a>
+                        <a href="#projects" class="nav-link">Projects</a>
+                        <a href="#industries" class="nav-link">Industries</a>
+                        <a href="#team" class="nav-link">Team</a>
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </nav>
+                    <button type="button" class="menu-toggle" id="menuToggle" aria-expanded="false"
+                        aria-controls="floatingMenu" aria-label="Open navigation menu">
+                        <span></span><span></span><span></span>
                     </button>
-                    <div class="form-success" id="formSuccess">
-                        ✅ Thank you! We'll get back to you soon.
-                    </div>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <!-- ─── FOOTER ─── -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-top">
-                <div class="footer-brand">
-                    <img src="logo.png" alt="Ziyaan Technologies" class="footer-logo" />
-                    <span>Ziyaan Technologies</span>
+                    <a href="#projects" class="nav-square nav-square-accent" aria-label="Projects">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7" height="7" /><rect x="14" y="3" width="7" height="7" /><rect x="14" y="14" width="7" height="7" /><rect x="3" y="14" width="7" height="7" /></svg>
+                    </a>
+                    <a href="#contact" class="nav-square" aria-label="Contact">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" /></svg>
+                    </a>
                 </div>
-                <nav class="footer-nav">
+            </div>
+            <div class="floating-menu" id="floatingMenu">
+                <nav aria-label="Mobile navigation">
                     <a href="#home">Home</a>
-                    <a href="#about">About</a>
                     <a href="#services">Services</a>
                     <a href="#projects">Projects</a>
+                    <a href="#industries">Industries</a>
                     <a href="#team">Team</a>
                     <a href="#contact">Contact</a>
                 </nav>
             </div>
-            <div class="footer-bottom">
-                <p>© <span id="year"></span> Ziyaan Technologies. All rights reserved.</p>
-            </div>
         </div>
-    </footer>
+
+        <main>
+            <!-- ─── HERO ─── -->
+            <section id="home" class="hero">
+                <div class="hero-bg" aria-hidden="true">
+                    <div class="hero-color-field"></div>
+                    <div class="aurora-ribbon aurora-ribbon-a"></div>
+                    <div class="aurora-ribbon aurora-ribbon-b"></div>
+                    <div class="hero-orb hero-orb-a"></div>
+                    <div class="hero-orb hero-orb-b"></div>
+                    <div class="hero-orb hero-orb-c"></div>
+                    <div class="hero-outline-cluster hero-outline-cluster-left">
+                        <span class="hero-layer-outline hero-layer-outline-one"></span>
+                        <span class="hero-layer-outline hero-layer-outline-two"></span>
+                        <span class="hero-layer-outline hero-layer-outline-three"></span>
+                    </div>
+                    <div class="hero-outline-cluster hero-outline-cluster-right">
+                        <span class="hero-layer-outline hero-layer-outline-one"></span>
+                        <span class="hero-layer-outline hero-layer-outline-two"></span>
+                        <span class="hero-layer-outline hero-layer-outline-three"></span>
+                    </div>
+                    <div class="perspective-grid"></div>
+                    <div class="hero-light-sweep"></div>
+                    <div class="hero-fade"></div>
+                </div>
+
+                <div class="hero-inner">
+                    <div class="hero-copy">
+                        <div class="hero-badge">
+                            <span class="hero-badge-dot"><span></span></span>
+                            Software House · Est. 2024
+                        </div>
+                        <h1 class="hero-title">
+                            Crafting Digital<br />
+                            <span class="premium-gradient-text">Excellence</span>
+                        </h1>
+                        <p class="hero-subtitle">
+                            Ziyaan Technologies is a software development company providing digital solutions for
+                            businesses and government institutions.
+                        </p>
+                        <div class="hero-actions">
+                            <a href="#projects" class="premium-button reflection btn-lg" id="hero-cta-projects">View Our Work</a>
+                            <a href="#contact" class="glass-btn btn-lg" id="hero-cta-contact">Let's Talk</a>
+                        </div>
+                        <div class="hero-stats">
+                            <div class="hero-stat">
+                                <p class="hero-stat-value"><span class="stat-number" data-target="10">0</span>+</p>
+                                <p class="hero-stat-label">Projects Delivered</p>
+                            </div>
+                            <div class="hero-stat">
+                                <p class="hero-stat-value"><span class="stat-number" data-target="25">0</span>+</p>
+                                <p class="hero-stat-label">Happy Clients</p>
+                            </div>
+                            <div class="hero-stat">
+                                <p class="hero-stat-value"><span class="stat-number" data-target="3">0</span>+</p>
+                                <p class="hero-stat-label">Years Experience</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hero-visual">
+                        <div class="hero-photo-stage">
+                            <div class="hero-photo-backplate"></div>
+                            <div class="hero-photo-frame">
+                                <!-- Placeholder shows until hero.png is added to the project root -->
+                                <div class="hero-photo-placeholder">
+                                    <img src="logo.png" alt="" />
+                                    <span>Add hero.png</span>
+                                </div>
+                                <img class="hero-photo-img" src="hero.png"
+                                    alt="Futuristic 3D robot working on a laptop surrounded by holographic code and data displays"
+                                    onerror="this.remove()" />
+                                <div class="hero-photo-tint"></div>
+                            </div>
+                            <div class="hero-photo-caption">
+                                <p class="hero-photo-caption-eyebrow">Government Partner</p>
+                                <p class="hero-photo-caption-title">Chaman Bazar App</p>
+                            </div>
+                            <div class="hero-photo-chip">AI Solutions</div>
+                            <span class="hero-bubble bubble-one"></span>
+                            <span class="hero-bubble bubble-two"></span>
+                            <span class="hero-bubble bubble-three"></span>
+                            <span class="hero-bubble bubble-four"><img src="logo.png" alt="" /></span>
+                            <span class="hero-bubble bubble-five"></span>
+                            <span class="hero-spark hero-spark-one"></span>
+                            <span class="hero-spark hero-spark-two"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-marquee" role="region" aria-label="Our services">
+                    <div class="marquee-track">
+                        <div class="marquee-group">
+                            <a href="#services"><span></span>Custom Software</a>
+                            <a href="#services"><span></span>Mobile Apps</a>
+                            <a href="#services"><span></span>Web Applications</a>
+                            <a href="#services"><span></span>Desktop Software</a>
+                            <a href="#services"><span></span>AI Solutions</a>
+                            <a href="#services"><span></span>POS Systems</a>
+                            <a href="#services"><span></span>UI/UX Design</a>
+                            <a href="#services"><span></span>Maintenance &amp; Support</a>
+                        </div>
+                        <div class="marquee-group" aria-hidden="true">
+                            <a href="#services" tabindex="-1"><span></span>Custom Software</a>
+                            <a href="#services" tabindex="-1"><span></span>Mobile Apps</a>
+                            <a href="#services" tabindex="-1"><span></span>Web Applications</a>
+                            <a href="#services" tabindex="-1"><span></span>Desktop Software</a>
+                            <a href="#services" tabindex="-1"><span></span>AI Solutions</a>
+                            <a href="#services" tabindex="-1"><span></span>POS Systems</a>
+                            <a href="#services" tabindex="-1"><span></span>UI/UX Design</a>
+                            <a href="#services" tabindex="-1"><span></span>Maintenance &amp; Support</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ─── QUICK START ─── -->
+            <section id="quick-start" class="quick-start" aria-labelledby="quick-start-heading">
+                <div class="quick-start-glow" aria-hidden="true"></div>
+                <div class="quick-start-divider" aria-hidden="true"></div>
+                <span class="quick-start-watermark" aria-hidden="true">GO</span>
+                <div class="quick-start-inner">
+                    <div>
+                        <div class="eyebrow-line"><span></span>Have an idea?</div>
+                        <h2 id="quick-start-heading" class="quick-start-title">Start with one <span
+                                class="premium-gradient-text">conversation.</span></h2>
+                        <p class="quick-start-text">Tell us the goal. We'll shape the right digital solution.</p>
+                        <a href="mailto:ziyaantechnologies@gmail.com?subject=Project%20idea"
+                            class="premium-button reflection btn-lg quick-start-btn">Discuss Your Idea <span
+                                aria-hidden="true">→</span></a>
+                    </div>
+                    <div class="steps">
+                        <div class="step"><span class="step-num">01</span>
+                            <p>Discover</p><span class="step-arrow" aria-hidden="true">→</span>
+                        </div>
+                        <div class="step"><span class="step-num">02</span>
+                            <p>Build</p><span class="step-arrow" aria-hidden="true">→</span>
+                        </div>
+                        <div class="step"><span class="step-num">03</span>
+                            <p>Grow</p><span class="step-arrow" aria-hidden="true">→</span>
+                        </div>
+                        <div class="steps-note"><span></span>Replies within one business day</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ─── SERVICES ─── -->
+            <section id="services" class="services">
+                <div class="blur-blob services-blob-a" aria-hidden="true"></div>
+                <div class="blur-blob services-blob-b" aria-hidden="true"></div>
+                <div class="container section-pad">
+                    <div class="section-head">
+                        <div class="section-head-copy">
+                            <p class="eyebrow">What we do</p>
+                            <h2 class="section-title">Our IT Services</h2>
+                            <p class="section-subtitle">End-to-end software solutions built around your workflow,
+                                your team and your customers.</p>
+                        </div>
+                        <div class="section-head-stats">
+                            <div>
+                                <p class="head-stat premium-gradient-text">08</p>
+                                <p class="head-stat-label">Core services</p>
+                            </div>
+                            <div class="head-stat-divided">
+                                <p class="head-stat">10+</p>
+                                <p class="head-stat-label">Projects delivered</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="services-grid">
+                        <article class="service-card service-card-featured reveal" id="svc-custom">
+                            <div class="card-glow card-glow-a" aria-hidden="true"></div>
+                            <div class="card-glow card-glow-b" aria-hidden="true"></div>
+                            <div class="featured-squares" aria-hidden="true"><span></span><span></span><span></span></div>
+                            <div class="card-topbar grad-full"></div>
+                            <div class="service-card-head">
+                                <span class="service-num">Service 01</span>
+                                <span class="service-code">CSD</span>
+                            </div>
+                            <div class="service-card-body">
+                                <h3>Custom Software Solutions</h3>
+                                <p>Tailored software built from the ground up — ERP and CRM systems, database
+                                    architecture, system integration and consulting aligned with your exact workflow.</p>
+                                <a href="#contact" class="service-link">Learn More <span aria-hidden="true">→</span></a>
+                            </div>
+                        </article>
+
+                        <article class="service-card service-card-wide reveal" id="svc-mobile" style="--delay:0.05s">
+                            <div class="card-hover-glow" aria-hidden="true"></div>
+                            <div class="card-topbar grad-a"></div>
+                            <div class="service-card-head">
+                                <span class="service-num">Service 02</span>
+                                <span class="service-code">MOB</span>
+                            </div>
+                            <div class="service-card-body">
+                                <h3>Mobile App Development</h3>
+                                <p>Native and cross-platform apps for Android &amp; iOS — Kotlin, Flutter and React
+                                    Native, from UI/UX design to Play Store publishing.</p>
+                                <a href="#contact" class="service-link">Learn More <span aria-hidden="true">→</span></a>
+                            </div>
+                        </article>
+
+                        <article class="service-card reveal" id="svc-web" style="--delay:0.1s">
+                            <div class="card-hover-glow" aria-hidden="true"></div>
+                            <div class="card-topbar grad-b"></div>
+                            <div class="service-card-head">
+                                <span class="service-num">Service 03</span>
+                                <span class="service-code">WEB</span>
+                            </div>
+                            <div class="service-card-body">
+                                <h3>Web Application Development</h3>
+                                <p>Modern, responsive platforms with React, Next.js and Node.js — admin dashboards,
+                                    e-commerce and REST APIs.</p>
+                                <a href="#contact" class="service-link">Learn More <span aria-hidden="true">→</span></a>
+                            </div>
+                        </article>
+
+                        <article class="service-card reveal" id="svc-desktop" style="--delay:0.15s">
+                            <div class="card-hover-glow" aria-hidden="true"></div>
+                            <div class="card-topbar grad-full"></div>
+                            <div class="service-card-head">
+                                <span class="service-num">Service 04</span>
+                                <span class="service-code">DSK</span>
+                            </div>
+                            <div class="service-card-body">
+                                <h3>Desktop Application Development</h3>
+                                <p>Powerful Java/JavaFX software for business management, booking tools, reporting
+                                    and analytics.</p>
+                                <a href="#contact" class="service-link">Learn More <span aria-hidden="true">→</span></a>
+                            </div>
+                        </article>
+
+                        <article class="service-card reveal" id="svc-ai" style="--delay:0.2s">
+                            <div class="card-hover-glow" aria-hidden="true"></div>
+                            <div class="card-topbar grad-a"></div>
+                            <div class="service-card-head">
+                                <span class="service-num">Service 05</span>
+                                <span class="service-code">AI</span>
+                            </div>
+                            <div class="service-card-body">
+                                <h3>AI &amp; Machine Learning</h3>
+                                <p>Multi-agent LLM systems, computer vision and OCR pipelines that automate decisions
+                                    and reduce manual monitoring.</p>
+                                <a href="#contact" class="service-link">Learn More <span aria-hidden="true">→</span></a>
+                            </div>
+                        </article>
+
+                        <article class="service-card reveal" id="svc-pos" style="--delay:0.25s">
+                            <div class="card-hover-glow" aria-hidden="true"></div>
+                            <div class="card-topbar grad-b"></div>
+                            <div class="service-card-head">
+                                <span class="service-num">Service 06</span>
+                                <span class="service-code">POS</span>
+                            </div>
+                            <div class="service-card-body">
+                                <h3>POS &amp; Management Systems</h3>
+                                <p>Billing, inventory, khata, orders and daily sales reporting for restaurants, cafés,
+                                    banquets and factories.</p>
+                                <a href="#contact" class="service-link">Learn More <span aria-hidden="true">→</span></a>
+                            </div>
+                        </article>
+
+                        <article class="service-card reveal" id="svc-uiux" style="--delay:0.3s">
+                            <div class="card-hover-glow" aria-hidden="true"></div>
+                            <div class="card-topbar grad-full"></div>
+                            <div class="service-card-head">
+                                <span class="service-num">Service 07</span>
+                                <span class="service-code">UX</span>
+                            </div>
+                            <div class="service-card-body">
+                                <h3>UI/UX Design</h3>
+                                <p>Clean, intuitive interfaces and prototypes designed for real users before a single
+                                    line of code is written.</p>
+                                <a href="#contact" class="service-link">Learn More <span aria-hidden="true">→</span></a>
+                            </div>
+                        </article>
+
+                        <article class="service-card reveal" id="svc-support" style="--delay:0.35s">
+                            <div class="card-hover-glow" aria-hidden="true"></div>
+                            <div class="card-topbar grad-a"></div>
+                            <div class="service-card-head">
+                                <span class="service-num">Service 08</span>
+                                <span class="service-code">SUP</span>
+                            </div>
+                            <div class="service-card-body">
+                                <h3>Maintenance &amp; Support</h3>
+                                <p>Updates, bug fixes, hosting and new features after launch — so your software keeps
+                                    running as your business grows.</p>
+                                <a href="#contact" class="service-link">Learn More <span aria-hidden="true">→</span></a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ─── PROJECTS ─── -->
+            <section id="projects" class="projects">
+                <div class="container section-pad">
+                    <div class="section-head">
+                        <div class="section-head-copy">
+                            <p class="eyebrow">Our Portfolio</p>
+                            <h2 class="section-title">Featured Projects</h2>
+                            <p class="section-subtitle">A showcase of the work we're most proud of.</p>
+                        </div>
+                        <div class="section-head-stats">
+                            <div class="head-stat-inline">
+                                <span class="head-stat head-stat-xl premium-gradient-text">09</span>
+                                <span class="head-stat-label">Shipped products</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="projects-grid">
+                        <article class="project-card project-card-featured reveal" id="proj-chaman">
+                            <div class="card-glow card-glow-a" aria-hidden="true"></div>
+                            <div class="card-glow card-glow-b" aria-hidden="true"></div>
+                            <div class="card-topbar grad-full"></div>
+                            <div class="project-featured-copy">
+                                <div class="project-badges">
+                                    <span class="project-badge project-badge-dark">Government of Balochistan</span>
+                                    <span class="project-badge project-badge-dark">Available on Play Store</span>
+                                </div>
+                                <h3>Chaman Bazar</h3>
+                                <p>Chaman Bazar is a specialized government digital initiative designed to regulate and
+                                    monitor the prices of essential commodities specifically within Chaman city. This
+                                    project serves as a transparent bridge between the District Administration Chaman
+                                    and the public, ensuring that official price lists are implemented and accessible
+                                    to all citizens. By providing real-time data on the costs of daily goods, Chaman
+                                    Bazar aims to curb overcharging, stabilize the local market, and empower residents
+                                    with a reliable tool for consumer rights and price accountability.</p>
+                                <div class="project-tags project-tags-dark">
+                                    <span>React Native</span>
+                                    <span>Android</span>
+                                    <span>Node.js</span>
+                                    <span>MySQL</span>
+                                </div>
+                            </div>
+                            <div class="project-featured-shot">
+                                <img src="screenshots/chaman-bazar.png" alt="Chaman Bazar on Google Play Store" />
+                            </div>
+                        </article>
+
+                        <article class="project-card reveal" id="proj-gkb" style="--delay:0.05s">
+                            <div class="card-hover-glow" aria-hidden="true"></div>
+                            <div class="card-topbar grad-a"></div>
+                            <div class="project-media project-media-code"><span>GKB</span></div>
+                            <div class="project-body">
+                                <span class="project-badge">Desktop App</span>
+                                <h3>GKB Banquet Booking System</h3>
+                                <p>Complete booking and event management system for Grand Kebabish Banquet — handling
+                                    reservations, hall management, and analytics.</p>
+                                <div class="project-tags">
+                                    <span>Java</span>
+                                    <span>JavaFX</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="project-card reveal" id="proj-kebabish" style="--delay:0.1s">
+                            <div class="card-hover-glow" aria-hidden="true"></div>
+                            <div class="card-topbar grad-b"></div>
+                            <div class="project-media">
+                                <img src="screenshots/pakwan-management.png" alt="Pakwan Management System" />
+                            </div>
+                            <div class="project-body">
+                                <span class="project-badge">Desktop App</span>
+                                <h3>Pakwan Management System</h3>
+                                <p>Full restaurant management system — order handling, menu management, billing, and
+                                    detailed reporting built for efficient restaurant operations.</p>
+                                <div class="project-tags">
+                                    <span>Java</span>
+                                    <span>JavaFX</span>
+                                    <span>MySQL</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="project-card reveal" id="proj-humkaam-android" style="--delay:0.15s">
+                            <div class="card-hover-glow" aria-hidden="true"></div>
+                            <div class="card-topbar grad-full"></div>
+                            <div class="project-media project-media-phone">
+                                <img src="screenshots/humkaam-android.png" alt="HumKaam Android - Hire trusted experts" />
+                            </div>
+                            <div class="project-body">
+                                <span class="project-badge">Mobile App</span>
+                                <h3>HumKaam Android App</h3>
+                                <p>Pakistan's #1 verified professionals network — connecting clients with ID-verified,
+                                    background-checked plumbers, electricians, tutors, nurses, and more. Find trusted
+                                    experts for any job, instantly.</p>
+                                <div class="project-tags">
+                                    <span>Android</span>
+                                    <span>Kotlin</span>
+                                    <span>Jetpack Compose</span>
+                                    <span>REST API</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="project-card reveal" id="proj-humkaam-web" style="--delay:0.05s">
+                            <div class="card-hover-glow" aria-hidden="true"></div>
+                            <div class="card-topbar grad-a"></div>
+                            <div class="project-media">
+                                <img src="screenshots/humkaam-web.png" alt="HumKaam Web Platform" />
+                            </div>
+                            <div class="project-body">
+                                <span class="project-badge">Web App</span>
+                                <h3>HumKaam Web Platform</h3>
+                                <p>A full-featured web platform for hiring verified professionals — providing search,
+                                    booking, in-app messaging, reviews, and admin management dashboards.</p>
+                                <div class="project-tags">
+                                    <span>React</span>
+                                    <span>Node.js</span>
+                                    <span>PostgreSQL</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="project-card reveal" id="proj-cafe-baldia" style="--delay:0.1s">
+                            <div class="card-hover-glow" aria-hidden="true"></div>
+                            <div class="card-topbar grad-b"></div>
+                            <div class="project-media">
+                                <img src="screenshots/cafe-baldia.png" alt="Cafe Baldia POS System" />
+                            </div>
+                            <div class="project-body">
+                                <span class="project-badge">Desktop App</span>
+                                <h3>Cafe Baldia</h3>
+                                <p>A complete café management and POS system — handling dine-in/delivery orders, table
+                                    management, menu items, billing, khata (ledger), and daily sales reports to
+                                    streamline café operations efficiently.</p>
+                                <div class="project-tags">
+                                    <span>Java</span>
+                                    <span>JavaFX</span>
+                                    <span>MySQL</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="project-card reveal" id="proj-bricks-bhatti" style="--delay:0.15s">
+                            <div class="card-hover-glow" aria-hidden="true"></div>
+                            <div class="card-topbar grad-full"></div>
+                            <div class="project-media project-media-code"><span>RKB</span></div>
+                            <div class="project-body">
+                                <span class="project-badge">Desktop App</span>
+                                <h3>Rahim Khan Bhati – Bricks Bhatti</h3>
+                                <p>A business management system built for a bricks manufacturing unit — covering
+                                    production tracking, inventory, sales records, and financial reporting.</p>
+                                <div class="project-tags">
+                                    <span>Java</span>
+                                    <span>JavaFX</span>
+                                    <span>MySQL</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="project-card project-card-half project-card-dark reveal" id="proj-multi-agent-ai"
+                            style="--delay:0.05s">
+                            <div class="card-glow card-glow-a" aria-hidden="true"></div>
+                            <div class="card-topbar grad-full"></div>
+                            <div class="project-body">
+                                <div class="project-dark-head">
+                                    <span class="project-badge project-badge-dark">AI / Research</span>
+                                    <span class="service-code">AI</span>
+                                </div>
+                                <h3>Multi-Agent AI Student Assistant</h3>
+                                <p>A multi-agent AI system designed to assist students with study-related tasks and
+                                    academic workflows. Built around specialized agents handling task decomposition,
+                                    context management, and structured academic outputs — emphasizing separated
+                                    reasoning, task execution, and user-facing responses.</p>
+                                <div class="project-tags project-tags-dark">
+                                    <span>Python</span>
+                                    <span>LLMs</span>
+                                    <span>Multi-Agent Architecture</span>
+                                    <span>AI Orchestration</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="project-card project-card-half project-card-dark reveal" id="proj-ai-traffic"
+                            style="--delay:0.1s">
+                            <div class="card-glow card-glow-a" aria-hidden="true"></div>
+                            <div class="card-topbar grad-full"></div>
+                            <div class="project-body">
+                                <div class="project-dark-head">
+                                    <span class="project-badge project-badge-dark">Computer Vision / AI</span>
+                                    <span class="service-code">CV</span>
+                                </div>
+                                <h3>AI Traffic Management &amp; License/Vehicle Recognition System</h3>
+                                <p>A YOLO-based computer vision model for traffic-management applications. Integrates
+                                    OCR technology to extract textual data from detected vehicle and license-plate
+                                    regions, combining detection and extraction into an automated pipeline for reducing
+                                    manual monitoring and enabling intelligent traffic-data processing.</p>
+                                <div class="project-tags project-tags-dark">
+                                    <span>YOLO</span>
+                                    <span>Computer Vision</span>
+                                    <span>OCR</span>
+                                    <span>Python</span>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ─── WHY US ─── -->
+            <section id="why-us" class="why-us">
+                <div class="blur-blob why-blob" aria-hidden="true"></div>
+                <div class="container section-pad">
+                    <div class="section-head">
+                        <div class="section-head-copy">
+                            <p class="eyebrow">Built for business</p>
+                            <h2 class="section-title">Why Businesses Choose Ziyaan</h2>
+                            <p class="section-subtitle">Practical technology, thoughtful design and dependable
+                                support — brought together around your business.</p>
+                        </div>
+                        <div class="section-head-stats">
+                            <div class="head-stat-inline">
+                                <span class="head-stat head-stat-xl premium-gradient-text">03</span>
+                                <span class="head-stat-label">Value pillars</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pillars-grid">
+                        <article class="pillar reveal">
+                            <div class="card-hover-glow" aria-hidden="true"></div>
+                            <div class="pillar-head">
+                                <div>
+                                    <p class="pillar-eyebrow">Build</p>
+                                    <h3>Made for your business</h3>
+                                </div>
+                                <span class="pillar-num">01</span>
+                            </div>
+                            <div class="pillar-line"></div>
+                            <div class="pillar-list">
+                                <div class="pillar-row"><span>01</span>
+                                    <p>Custom Built Solutions</p><i aria-hidden="true">→</i>
+                                </div>
+                                <div class="pillar-row"><span>02</span>
+                                    <p>Secure Development</p><i aria-hidden="true">→</i>
+                                </div>
+                                <div class="pillar-row"><span>03</span>
+                                    <p>Scalable Systems</p><i aria-hidden="true">→</i>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="pillar pillar-dark reveal" style="--delay:0.1s">
+                            <div class="card-glow card-glow-a" aria-hidden="true"></div>
+                            <div class="card-glow card-glow-c" aria-hidden="true"></div>
+                            <div class="pillar-head">
+                                <div>
+                                    <p class="pillar-eyebrow">Experience</p>
+                                    <h3>Simple from day one</h3>
+                                </div>
+                                <span class="pillar-num">02</span>
+                            </div>
+                            <div class="pillar-line"></div>
+                            <div class="pillar-list">
+                                <div class="pillar-row"><span>01</span>
+                                    <p>Mobile Friendly Design</p><i aria-hidden="true">→</i>
+                                </div>
+                                <div class="pillar-row"><span>02</span>
+                                    <p>Easy Management</p><i aria-hidden="true">→</i>
+                                </div>
+                                <div class="pillar-row"><span>03</span>
+                                    <p>Modern User Experience</p><i aria-hidden="true">→</i>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="pillar reveal" style="--delay:0.2s">
+                            <div class="card-hover-glow" aria-hidden="true"></div>
+                            <div class="pillar-head">
+                                <div>
+                                    <p class="pillar-eyebrow">Partnership</p>
+                                    <h3>Support beyond launch</h3>
+                                </div>
+                                <span class="pillar-num">03</span>
+                            </div>
+                            <div class="pillar-line"></div>
+                            <div class="pillar-list">
+                                <div class="pillar-row"><span>01</span>
+                                    <p>Hands-on Founders</p><i aria-hidden="true">→</i>
+                                </div>
+                                <div class="pillar-row"><span>02</span>
+                                    <p>Ongoing Support</p><i aria-hidden="true">→</i>
+                                </div>
+                                <div class="pillar-row"><span>03</span>
+                                    <p>Professional Delivery</p><i aria-hidden="true">→</i>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ─── INDUSTRIES ─── -->
+            <section id="industries" class="industries">
+                <div class="container section-pad">
+                    <div class="section-head-center">
+                        <p class="eyebrow">Who we help</p>
+                        <h2 class="section-title">Industries We Serve</h2>
+                        <p class="section-subtitle">From government departments to growing startups, we build
+                            software for organizations that need modern digital systems.</p>
+                    </div>
+
+                    <div class="industries-grid">
+                        <article class="industry-featured reveal">
+                            <div class="card-glow card-glow-a" aria-hidden="true"></div>
+                            <div class="card-glow card-glow-b" aria-hidden="true"></div>
+                            <div class="card-topbar grad-full"></div>
+                            <div class="industry-featured-copy">
+                                <div class="industry-featured-eyebrow"><span>01</span>Main Sector</div>
+                                <h3>Government &amp; Public Sector</h3>
+                                <p>Digital public services that bring transparency between administrations and
+                                    citizens — like Chaman Bazar for the Government of Balochistan.</p>
+                                <a href="#contact" class="service-link">Discuss Your Requirements <span
+                                        aria-hidden="true">→</span></a>
+                            </div>
+                            <div class="industry-featured-cells">
+                                <div><span>01</span>
+                                    <p>Price Monitoring</p>
+                                </div>
+                                <div><span>02</span>
+                                    <p>Public Services</p>
+                                </div>
+                                <div><span>03</span>
+                                    <p>Transparency</p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="feature-tile reveal"><span class="tile-num grad-bg-a">02</span>
+                            <h3>Restaurants &amp; Cafes</h3>
+                        </article>
+                        <article class="feature-tile reveal" style="--delay:0.05s"><span class="tile-num grad-bg-b">03</span>
+                            <h3>Events &amp; Banquets</h3>
+                        </article>
+                        <article class="feature-tile reveal" style="--delay:0.1s"><span class="tile-num grad-bg-c">04</span>
+                            <h3>Manufacturing &amp; Brick Kilns</h3>
+                        </article>
+                        <article class="feature-tile reveal" style="--delay:0.15s"><span class="tile-num grad-bg-a">05</span>
+                            <h3>Retail &amp; Wholesale</h3>
+                        </article>
+                        <article class="feature-tile reveal"><span class="tile-num grad-bg-b">06</span>
+                            <h3>Education &amp; E-Learning</h3>
+                        </article>
+                        <article class="feature-tile reveal" style="--delay:0.05s"><span class="tile-num grad-bg-c">07</span>
+                            <h3>Transport &amp; Smart Cities</h3>
+                        </article>
+                        <article class="feature-tile reveal" style="--delay:0.1s"><span class="tile-num grad-bg-a">08</span>
+                            <h3>Service &amp; Gig Platforms</h3>
+                        </article>
+                        <article class="feature-tile reveal" style="--delay:0.15s"><span class="tile-num grad-bg-b">09</span>
+                            <h3>Startups &amp; Growing Companies</h3>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ─── TEAM ─── -->
+            <section id="team" class="team">
+                <div class="blur-blob team-blob" aria-hidden="true"></div>
+                <div class="container section-pad">
+                    <div class="section-head">
+                        <div class="section-head-copy">
+                            <p class="eyebrow">The Leadership</p>
+                            <h2 class="section-title">Meet Our Team</h2>
+                            <p class="section-subtitle">People who bring your ideas to life.</p>
+                        </div>
+                        <div class="section-head-stats">
+                            <div class="head-stat-inline">
+                                <span class="head-stat head-stat-xl premium-gradient-text">02</span>
+                                <span class="head-stat-label">Co-founders</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="team-grid">
+                        <article class="team-card reveal" id="team-ceo">
+                            <div class="card-hover-glow" aria-hidden="true"></div>
+                            <div class="team-head">
+                                <span class="team-avatar">MW</span>
+                                <div>
+                                    <p class="pillar-eyebrow">Chief Executive Officer</p>
+                                    <h3><a href="https://waseemayan.github.io/Portfolio/" target="_blank"
+                                            rel="noopener noreferrer" class="team-name-link">Muhammad Waseem <span
+                                                aria-hidden="true">↗</span></a></h3>
+                                </div>
+                            </div>
+                            <p class="team-bio">Co-founder and CEO of Ziyaan Technologies. Muhammad Waseem is a hands-on
+                                developer and team leader — actively involved in building every project alongside the
+                                team, from architecture to final delivery.</p>
+                            <div class="pillar-line"></div>
+                            <div class="pillar-list">
+                                <div class="pillar-row"><span>01</span>
+                                    <p>Full-Stack Dev</p>
+                                </div>
+                                <div class="pillar-row"><span>02</span>
+                                    <p>Leadership</p>
+                                </div>
+                                <div class="pillar-row"><span>03</span>
+                                    <p>Mobile &amp; Desktop</p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="team-card team-card-dark reveal" id="team-cto" style="--delay:0.1s">
+                            <div class="card-glow card-glow-a" aria-hidden="true"></div>
+                            <div class="card-glow card-glow-c" aria-hidden="true"></div>
+                            <div class="team-head">
+                                <span class="team-avatar">HU</span>
+                                <div>
+                                    <p class="pillar-eyebrow">Chief Technology Officer</p>
+                                    <h3>Hikmatullah</h3>
+                                </div>
+                            </div>
+                            <p class="team-bio">Co-founder and CTO of Ziyaan Technologies. Hikmatullah drives all
+                                technical development — writing code, designing systems, and shipping high-quality
+                                software for every client project.</p>
+                            <div class="pillar-line"></div>
+                            <div class="pillar-list">
+                                <div class="pillar-row"><span>01</span>
+                                    <p>Software Architecture</p>
+                                </div>
+                                <div class="pillar-row"><span>02</span>
+                                    <p>Full-Stack Dev</p>
+                                </div>
+                                <div class="pillar-row"><span>03</span>
+                                    <p>Java &amp; Mobile</p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ─── CONTACT ─── -->
+            <section id="contact" class="contact">
+                <div class="container">
+                    <div class="cta-panel">
+                        <div class="cta-glow" aria-hidden="true"></div>
+                        <div class="glass-grid" aria-hidden="true"></div>
+                        <div class="cta-content">
+                            <p class="eyebrow">Your next chapter</p>
+                            <h2 class="cta-title">Let's Build Something Amazing</h2>
+                            <p class="cta-text">Have a project in mind? We'd love to hear about it. Reach out and let's
+                                talk software.</p>
+                            <div class="cta-actions">
+                                <a href="#contactForm" class="premium-button reflection btn-lg">Get Started</a>
+                                <a href="https://wa.me/923172532083" target="_blank" rel="noopener noreferrer"
+                                    class="glass-btn btn-lg">WhatsApp Us</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-layout">
+                        <div class="contact-info">
+                            <a class="contact-card" id="contact-phone" href="tel:+923172532083">
+                                <span class="tile-num grad-bg-a">01</span>
+                                <div>
+                                    <p class="contact-label">Phone / WhatsApp</p>
+                                    <p class="contact-value">+92 317 253 2083</p>
+                                </div>
+                                <i aria-hidden="true">→</i>
+                            </a>
+                            <a class="contact-card" id="contact-email" href="mailto:ziyaantechnologies@gmail.com">
+                                <span class="tile-num grad-bg-b">02</span>
+                                <div>
+                                    <p class="contact-label">Email</p>
+                                    <p class="contact-value">ziyaantechnologies@gmail.com</p>
+                                </div>
+                                <i aria-hidden="true">→</i>
+                            </a>
+                            <div class="contact-card" id="contact-location">
+                                <span class="tile-num grad-bg-c">03</span>
+                                <div>
+                                    <p class="contact-label">Based In</p>
+                                    <p class="contact-value">Pakistan 🇵🇰</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <form class="contact-form" id="contactForm">
+                            <div class="card-topbar grad-full"></div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name">Your Name</label>
+                                    <input type="text" id="name" name="name" placeholder="e.g. Ziyaan" required />
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email Address</label>
+                                    <input type="email" id="email" name="email" placeholder="you@example.com" required />
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject"
+                                    placeholder="Project inquiry, partnership..." required />
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" placeholder="Tell us about your project or idea..."
+                                    rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="premium-button reflection btn-lg form-submit" id="submitBtn">
+                                <span>Send Message</span>
+                                <span aria-hidden="true">→</span>
+                            </button>
+                            <div class="form-success" id="formSuccess">
+                                Thank you! We'll get back to you soon.
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- ─── FOOTER ─── -->
+        <footer class="footer">
+            <div class="container footer-main">
+                <div>
+                    <a href="#home" class="brand brand-light">
+                        <img src="logo.png" alt="Ziyaan Technologies" class="brand-logo" />
+                        <span class="brand-text">Ziyaan Technologies</span>
+                    </a>
+                    <p class="footer-domain">Software House · Pakistan</p>
+                    <p class="footer-tagline">Custom Software, Mobile Apps, Web &amp; Desktop Applications, AI Solutions
+                        &amp; POS Systems</p>
+                </div>
+                <nav class="footer-nav" aria-label="Footer navigation">
+                    <a href="#services">Services</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#industries">Industries</a>
+                    <a href="#team">Team</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+            </div>
+            <div class="footer-bar">
+                <div class="container footer-bar-inner">
+                    <p>© <span id="year"></span> Ziyaan Technologies. All rights reserved.</p>
+                    <nav aria-label="Quick contact">
+                        <a href="mailto:ziyaantechnologies@gmail.com">Email</a>
+                        <a href="https://wa.me/923172532083" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+                    </nav>
+                </div>
+            </div>
+        </footer>
+    </div>
 
     <script src="script.js"></script>
 </body>
